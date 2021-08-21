@@ -1,0 +1,54 @@
+body{
+    font-family: 'Arvo', serif;
+    background-color: #f5dbda;
+}
+
+img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+.box{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 18px grey;
+    margin-left: 100px;
+    width: 400px;
+    padding-left: 20px;
+
+}
+
+#grid { 
+    display: grid; 
+    grid-template-columns: auto auto;
+}
+
+#grid2 { 
+    display: grid; 
+    grid-template-columns: auto auto;
+}
+
+#grid3 { 
+    display: grid; 
+    grid-template-columns: auto auto;
+}
+
+#grid4 { 
+    display: grid; 
+    grid-template-columns: auto auto;
+}
+
+#grid1 { 
+    display: grid; 
+    grid-template-columns: auto auto;
+}
+
+.result{
+    position: fixed;
+    bottom: 0;
+    color: #6c757d;
+    width: 100%;
+    background-color: #f5f5f5;
+    line-height: 3;
+    text-align: center;
+}

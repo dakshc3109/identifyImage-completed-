@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Case Study <br> <label style="font-size: 20px;">Microsoft azure VS Mobile Net</label></h1>
+        <br>
+    </center>
+
+    <div id="grid">
+    <div id="no1" class="box">
+        <br>
+        <label>1.<br><br><img src="tajMahal.jpg" id="img1"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa1">a large building with Taj Mahal in the background</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn1">mosque</span></label>
+        <br>
+        <label>Result - <span id="result1">Microsoft azure is more accurate</span></label>
+    </div>
+
+     <div id="no2" class="box">
+        <br>
+        <label>2.<br><br><img src="waterBootle.jpg" id="img2"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa2">a close up of a bottle</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn2">soap dispenser</span></label>
+        <br>
+        <label>Result - <span id="result2">Microsoft azure is more accurate</span></label>
+
+      
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<div id="grid1">
+    <div id="no3" class="box">
+        <br>
+        <label>3.<br><br><img src="phone.jpg" id="img3"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa3">square</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn3"></span>laptop, laptop computer</label>
+        <br>
+        <label>Result - <span id="result3">Mobile net is more accurate</span></label>
+    </div>
+
+     <div id="no4" class="box">
+        <br>
+        <label>4.<br><br><img src="pillow.jpg" id="img4"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa4">a close up of a piece of paper</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn4">television, television system</span></label>
+        <br>
+        <label>Result - <span id="result4">Microsoft azure is more accurate</span></label>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div id="grid2">
+    <div id="no5" class="box">
+        <br>
+        <label>5.<br><br><img src="apple.jpg" id="img5"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa5">a close up of a window</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn5">television, television system></span></label>
+        <br>
+        <label>Result - <span id="result5">Microsoft azure is more accurate</span></label>
+    </div>
+
+     <div id="no6" class="box">
+        <br>
+        <label>6.<br><br><img src="moon.jpg" id="img6"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa6">a close up of the moon</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn6">bubble</span></label>
+        <br>
+        <label>Result - <span id="result6">Microsoft azure is more accurate</span></label>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div id="grid3">
+    <div id="no7" class="box">
+        <br>
+        <label>7.<br><br><img src="hous.jpg" id="img7"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa7">a small house in the background</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn7"></span>digital clock</label>
+        <br>
+        <label>Result - <span id="result7">Microsoft azure is more accurate</span></label>
+    </div>
+
+     <div id="no8" class="box">
+        <br>
+        <label>8.<br><br><img src="banana.jpg" id="img8"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa8">a close up of a fruit</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn8">banana</span></label>
+        <br>
+        <label>Result - <span id="result8">Mobile Net is more accurate</span></label>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div id="grid4">
+    <div id="no9" class="box">
+        <br>
+        <label>7.<br><br><img src="horse.jpeg" id="img9"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa9">a horse standing on top of a grass coverd field</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn9">window screen</span></label>
+        <br>
+        <label>Result - <span id="result9">Microsoft azure is more accurate</span></label>
+    </div>
+
+     <div id="no10" class="box">
+        <br>
+        <label>10.<br><br><img src="choclate.jpg" id="img10"></label>
+        <br>
+        <br>
+        <label>Output On Microsoft azure - <span id="outputMa10">a close up of a piece of paper</span></label>
+        <br>
+        <label>Output On Mobile Net - <span id="outputMn10">pencil box, pencil case</span></label>
+        <br>
+        <label>Result - <span id="result10">Microsoft azure is more accurate</span></label>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="result">
+    <label>Microsoft azure is more accurate than mobile net identified by this case study.Images correctly identified - Mobile Net: 2 Microsoft azure: 8</label>
+  </div>
+
+</body>
+</html>
